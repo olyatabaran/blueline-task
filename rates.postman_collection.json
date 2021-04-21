@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "f9e8eef9-3112-4ce6-b8dd-56bbe42c7576",
+		"name": "rates",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rates/post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"day\" : \"2021-04-21\",\r\n    \"secret\" : \"a\",\r\n    \"rates\" : [\r\n       {\r\n           \"currency\" : \"ron\",\r\n           \"value\" : 78.5\r\n       },\r\n       {\r\n           \"currency\" : \"rub\",\r\n           \"value\" : 57.5\r\n       }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/rates.json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rates.json"
+					],
+					"query": [
+						{
+							"key": "2",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/rates.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/rates.json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rates.json"
+					],
+					"query": [
+						{
+							"key": "day",
+							"value": "2021-04-21",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
